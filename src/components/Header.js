@@ -27,7 +27,7 @@ function Header(props) {
                 <Link to="#">About</Link>
                 </div>
                 <div >
-                    <Link to="/cart" className="_header_cart">
+                    <Link to="/checkout" className="_header_cart">
                         <div class="_header_cartCount">{props.cart?.length}</div>
                         <AddShoppingCartIcon className="_header_cartIcon" />
                     </Link>

@@ -3,8 +3,7 @@ import StarIcon from '@material-ui/icons/Star';
 import './product.css';
 import {addToCart} from '../actions'
 
-function Product({ id, title, price, priceTag, rating, image ,clickHandler}) {
-    const clickAction = addToCart;
+function Product({ id, title,desc, price, priceTag, rating, image ,clickHandler}) {
     return (
         <div class="_product">
             <h4>{title}</h4>
@@ -21,7 +20,7 @@ function Product({ id, title, price, priceTag, rating, image ,clickHandler}) {
                     .map((_) => (<StarIcon />))}
 
             </div>
-            <button type="button" class="btn btn-secondary" onClick={() => clickHandler({id})}>Add to cart</button>
+            <button type="button" class="btn btn-secondary" onClick={() => clickHandler({id,title,desc,price,image,rating})}>Add to cart</button>
         </div>
 
     )

@@ -1,0 +1,56 @@
+._cartItem{
+    width: 100%;
+    border-bottom: 1px solid black ;
+    display: flex;
+    flex-direction: row;
+}
+._cartItem img {
+    width: 350px;
+}
+
+.checkoutSummary {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 2em;
+    text-align: center;
+
+}
+
+.checkoutSummary h1 {
+    flex:1;
+}
+
+._cartItem_desc{
+    padding: 1em;
+    flex:1;
+}
+
+h5{
+    text-align: right;
+    color: orangered;
+    font-size: x-large;
+    font-weight: 1000;
+}
+
+._removeItem{
+    margin: 11px;
+    color: red !important;
+    cursor: pointer;
+}
+
+.buyNow {
+    position: sticky;
+    bottom: 0;
+    background-color: green;
+    color: white;
+    font-weight: 1000;
+    font-size: xx-large;
+    text-align: center;
+    cursor: pointer;
+    transition:0.5s;
+}
+
+.buyNow:hover{
+    background-color: rgb(10, 163, 10);
+}

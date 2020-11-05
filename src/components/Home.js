@@ -13,9 +13,10 @@ function Home(props) {
             <Product
                 id={item.id}
                 title={item.title}
+                desc = {item.desc}
                 price={item.price}
                 priceTag='$'
-                rating={5}
+                rating={item.rating}
                 image={item.img}
                 clickHandler = {props.addToCart}
             />
@@ -44,7 +45,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        addToCart: (id) => { dispatch(actions.addToCart(id)) }
+        addToCart: (payload) => { dispatch(actions.addToCart(payload)) }
     }
 }
 
