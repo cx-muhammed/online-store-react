@@ -1,0 +1,135 @@
+a {
+    text-decoration: none;
+  }
+  
+  ._header {
+    background-color: #202020;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  ._header *{
+    display: inline;
+  }
+  
+  ._header a {
+    padding: 0.5em;
+    color: white;
+  }
+  
+  ._header_logo{
+    margin-right: 100px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: larger;
+    color: orangered !important;
+  }
+  
+  ._header_logo span {
+    color: rgb(224, 224, 224);
+  }
+  
+  ._header_search{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    height: 40px;
+      }
+  
+  ._header_search input {
+    width: 95%;
+    height: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: center;
+    font-size: x-large;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+  }
+  
+  ._header_searchIcon{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 5% !important;
+    height: 100% !important;
+    color: white;
+    background-color: orangered;
+  }
+  
+  input:focus, textarea:focus, select:focus{
+    outline: none;
+  }
+
+  .top{
+    position: sticky;
+    top: 0;
+    z-index: 99;
+  }
+  
+  ._header_searchIcon:hover {
+    background-color: rgb(195, 79, 36);
+    transition: 0.5s;
+  }
+  
+  ._header_itemList{
+    color: white;
+    margin-left: 55px;
+    align-items: right;
+  }
+  
+  ._header_itemList * {
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+  
+  ._header_cart{
+    background-color: rgb(59, 59, 59);
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  ._header_cartIcon{
+    /* margin-right: 8px; */
+    font-size: 2em !important;
+    flex:1;
+  }
+  
+  ._header_cartCount {
+    margin-bottom: 3px;
+    background-color: red;
+    height: 22px;
+    width: 22px;
+    text-align: center;
+    color: white !important;
+    border-radius: 50%;
+  }
+
+  .catagories{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    background-color: black;
+    border-top: 1px solid white;
+  }
+
+  .catagories a {
+    padding: 10px;
+    color: white !important;
+    margin-left: 10px;
+    text-decoration: none !important;
+  }
+
+  .catagories a:hover {
+    background-color: rgb(39, 39, 39);
+  }

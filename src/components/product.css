@@ -1,0 +1,25 @@
+._product * {
+    margin: 2px;
+}
+._product {
+    width: 350px;
+    padding: 0.7em;
+    margin-right: 0.7em;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    z-index: 1;
+}
+
+._product_image{
+    width: 200px;
+    object-fit: contain;
+}
+
+._product_rating {
+    margin: 1px;
+    display: inline;
+    color: orangered !important;
+}
